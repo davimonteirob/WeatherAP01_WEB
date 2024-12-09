@@ -1,0 +1,27 @@
+﻿@page "/"
+
+<MudPaper Elevation="4" Class="pa-4">
+    <MudText Typo="Typo.h4">Consultar por Cidade</MudText>
+    <EditForm Model="@cidade" OnValidSubmit="HandleValidSubmit">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+        <div class="form-group">
+
+            <label for="nome">Nome da Cidade</label>
+            <InputText id="nome" @bind-Value="cidade.Nome" class="form-control"/>
+
+        </div>
+    </EditForm>
+</MudPaper>
+
+
+@code{
+
+    Cidade cidade = new Cidade();
+
+    private async Task HandleValidSubmit()
+    {
+        Console.WriteLine("Formulário enviado com sucesso!");
+    }
+
+}
