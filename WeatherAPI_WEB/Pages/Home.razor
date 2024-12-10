@@ -1,27 +1,32 @@
 ﻿@page "/"
 
 <MudPaper Elevation="4" Class="pa-4">
-    <MudText Typo="Typo.h4">Consultar por Cidade</MudText>
-    <EditForm Model="@cidade" OnValidSubmit="HandleValidSubmit">
+
+    <MudText Typo="MudBlazor.Typo.h4" Align="MudBlazor.Align.Center">Consultar por Cidade</MudText>
+
+    <EditForm Model="@cidade" >
+        <MudButton OnClick="HandleValidSubmit">ok</MudButton>
+
         <DataAnnotationsValidator />
         <ValidationSummary />
-        <div class="form-group">
 
-            <label for="nome">Nome da Cidade</label>
-            <InputText id="nome" @bind-Value="cidade.Nome" class="form-control"/>
-
-        </div>
+        <MudTextField For="@(() => cidade.Nome)"
+                      Label="Nome da Cidade"
+                      Variant="Variant.Filled"
+                      FullWidth="true"
+                      Margin="Margin.Normal" />
     </EditForm>
+
 </MudPaper>
 
 
 @code{
 
-    Cidade cidade = new Cidade();
+    public Cidade cidade { get; set; } = new();
 
-    private async Task HandleValidSubmit()
+     async  Task HandleValidSubmit()
     {
-        Console.WriteLine("Formulário enviado com sucesso!");
+        Console.WriteLine($"Formulário enviado com sucesso! {cidade.Nome}");
     }
 
 }

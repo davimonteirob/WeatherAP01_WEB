@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "WeatherAPI_WEB",
   "resources": {
-    "hash": "sha256-bpLdVH1/wwBnC3gosvpHirUxIxmRkFJLGAUnHMJXzU0=",
+    "hash": "sha256-comC5B6dsxxe64cBB7iynBuI9TlIv2rRr1Zg1qlLJP0=",
     "jsModuleNative": {
       "dotnet.native.8.0.10.1kz9c0t202.js": "sha256-QVxMlY7ohmjgde/bZMA0dlWDAeuUP+tEfkiSdg4DFcE="
     },
@@ -211,10 +211,10 @@
       "mscorlib.wasm": "sha256-KvqZaNpjwhrOuzE4b4aMFsI+VUTyiWfoDI4zn4l9BM8=",
       "netstandard.wasm": "sha256-v+s7sWxtOM6bnOvC0jFrtnm6uMfbDymwl2nHNgbS2LM=",
       "System.Private.CoreLib.wasm": "sha256-pklll63uFQoY6vaD3vbluS9osYiJWLLLmob1yHFgepI=",
-      "WeatherAPI_WEB.wasm": "sha256-Wbj80rXcMcq3Lvx7y69hmW8cZ9Hecfr0ZVN7pJdu7sM="
+      "WeatherAPI_WEB.wasm": "sha256-Zqt4g2M+WUxBiCutHd2domqg1ZusN+jjj1idC1G4On0="
     },
     "pdb": {
-      "WeatherAPI_WEB.pdb": "sha256-7+2fRAgaACcQY7yBtJ1wF3La58SqLfgb7q9XYhGDWtY="
+      "WeatherAPI_WEB.pdb": "sha256-2u6/dPPs/VMe1DcTQcxN5eWmGPPgCFUzfmnov3DxhX0="
     }
   },
   "cacheBootResources": true,

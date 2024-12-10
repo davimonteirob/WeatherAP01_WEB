@@ -1044,3 +1044,4 @@ C:\Users\UNICOTD20\source\repos\WeatherAPI_WEB\WeatherAPI_WEB\obj\Debug\net8.0\w
 C:\Users\UNICOTD20\source\repos\WeatherAPI_WEB\WeatherAPI_WEB\obj\Debug\net8.0\compressed\uo1bv2zu63.gz
 C:\Users\UNICOTD20\source\repos\WeatherAPI_WEB\WeatherAPI_WEB\obj\Debug\net8.0\compressed\4fid1do1ph.gz
 C:\Users\UNICOTD20\source\repos\WeatherAPI_WEB\WeatherAPI_WEB\obj\Debug\net8.0\compressed\04frcgup3z.gz
+C:\Users\UNICOTD20\source\repos\WeatherAPI_WEB\WeatherAPI_WEB\obj\Debug\net8.0\WeatherAPI_WEB.sourcelink.json
