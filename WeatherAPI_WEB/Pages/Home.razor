@@ -7,24 +7,33 @@
    <MudItem xs="12" sm="12" md="3" lg="3">
 	   <MudTextField T="string" 
 							  Label="Nome da Cidade" 
-							  @bind-Value="" />
+							  @bind-Value="nomeDaCidade" />
 
    </MudItem>
    <MudItem xs="12" sm="12" md="3" lg="3">
 
    </MudItem>
-
+   @if (cidade != null)
+{
+	<p>Cidade Adicionada: @cidade.Nome</p>
+}
 
 </MudPaper>
 
 
 @code{
 
-	public Cidade cidade { get; set; } = new();
+	private string nomeDaCidade;
 
-	 async  Task HandleValidSubmit()
+	public Cidade cidade;
+
+	async  Task HandleValidSubmit()
 	{
 		Console.WriteLine($"Formulário enviado com sucesso! {cidade.Nome}");
 	}
 
+	public void AdicionarCidade()
+	{
+		cidade = new Cidade(nomeDaCidade);
+	}
 }
