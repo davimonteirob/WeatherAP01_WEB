@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WeatherAPI_WEB")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d39b023432ea22b15c7e691f2179219afbeec0f6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a28959652dfaa0bb8bd4f89cb46e1663f37781d1")]
 [assembly: System.Reflection.AssemblyProductAttribute("WeatherAPI_WEB")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WeatherAPI_WEB")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

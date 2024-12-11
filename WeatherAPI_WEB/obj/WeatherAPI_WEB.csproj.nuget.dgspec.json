@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "J:\\WeatherAP01_WEB\\WeatherAPI_WEB\\WeatherAPI_WEB.csproj": {}
+    "C:\\Users\\UNICOTD20\\source\\repos\\WeatherAPI_WEB\\WeatherAPI_WEB\\WeatherAPI_WEB.csproj": {}
   },
   "projects": {
-    "J:\\WeatherAP01_WEB\\WeatherAPI_WEB\\WeatherAPI_WEB.csproj": {
+    "C:\\Users\\UNICOTD20\\source\\repos\\WeatherAPI_WEB\\WeatherAPI_WEB\\WeatherAPI_WEB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "J:\\WeatherAP01_WEB\\WeatherAPI_WEB\\WeatherAPI_WEB.csproj",
+        "projectUniqueName": "C:\\Users\\UNICOTD20\\source\\repos\\WeatherAPI_WEB\\WeatherAPI_WEB\\WeatherAPI_WEB.csproj",
         "projectName": "WeatherAPI_WEB",
-        "projectPath": "J:\\WeatherAP01_WEB\\WeatherAPI_WEB\\WeatherAPI_WEB.csproj",
-        "packagesPath": "C:\\Users\\davi3\\.nuget\\packages\\",
-        "outputPath": "J:\\WeatherAP01_WEB\\WeatherAPI_WEB\\obj\\",
+        "projectPath": "C:\\Users\\UNICOTD20\\source\\repos\\WeatherAPI_WEB\\WeatherAPI_WEB\\WeatherAPI_WEB.csproj",
+        "packagesPath": "C:\\Users\\UNICOTD20\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\UNICOTD20\\source\\repos\\WeatherAPI_WEB\\WeatherAPI_WEB\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "E:\\VS2022SDK'S_Componentes_Ferramentas\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\davi3\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\UNICOTD20\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

@@ -4,15 +4,22 @@
 
 	<MudText Typo="MudBlazor.Typo.h4" Align="MudBlazor.Align.Center">Consultar por Cidade</MudText>
 
-   <MudItem xs="12" sm="12" md="3" lg="3">
-	   <MudTextField T="string" 
-							  Label="Nome da Cidade" 
-							  @bind-Value="nomeDaCidade" />
+	<EditForm Model="@this" OnValidSubmit="HandleValidSubmit">
 
-   </MudItem>
-   <MudItem xs="12" sm="12" md="3" lg="3">
 
-   </MudItem>
+		<MudItem xs="12" sm="12" md="3" lg="3">
+			<MudTextField T="string"
+						  Label="Nome da Cidade"
+						  @bind-Value="cidade.Nome" />
+		</MudItem>
+
+		<MudItem xs="12" sm="12" md="3" lg="3">
+
+		</MudItem>
+
+	</EditForm>
+
+
    @if (cidade != null)
 {
 	<p>Cidade Adicionada: @cidade.Nome</p>
@@ -23,17 +30,29 @@
 
 @code{
 
-	private string nomeDaCidade;
+	private string nomeDaCidade = "31";
 
-	public Cidade cidade;
+	public Cidade cidade = new Cidade("Nome Padrão");
 
-	async  Task HandleValidSubmit()
+	
+	// Este método é chamado ao submeter o formulário
+	void HandleValidSubmit()
 	{
 		Console.WriteLine($"Formulário enviado com sucesso! {cidade.Nome}");
 	}
 
+	// Este método cria a cidade com base no nome da cidade inserido
 	public void AdicionarCidade()
 	{
-		cidade = new Cidade(nomeDaCidade);
+		if (!string.IsNullOrEmpty(nomeDaCidade))
+		{
+			cidade = new Cidade(nomeDaCidade);
+		}
+		else
+		{
+			//se o nome da cidade for vazio ou nulo, exibe uma mensagem de erro.
+			Console.WriteLine("Nome da cidade não pode ser vazio.");
+		}
+
 	}
 }
