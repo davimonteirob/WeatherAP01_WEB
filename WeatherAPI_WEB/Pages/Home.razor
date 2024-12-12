@@ -34,7 +34,7 @@
 
 	public Cidade cidade = new Cidade("Nome Padrão");
 
-	
+
 	// Este método é chamado ao submeter o formulário
 	void HandleValidSubmit()
 	{
@@ -42,7 +42,7 @@
 	}
 
 	// Este método cria a cidade com base no nome da cidade inserido
-	public void AdicionarCidade()
+	public async void ConsultarPorCidade()
 	{
 		if (!string.IsNullOrEmpty(nomeDaCidade))
 		{
@@ -54,5 +54,26 @@
 			Console.WriteLine("Nome da cidade não pode ser vazio.");
 		}
 
-	}
+		using (HttpClient client = new HttpClient())
+		{
+
+			string keyAPI = "ea20d5b8700db72131450c6ec7313a37";
+			string url = $"http://api.openweathermap.org/data/2.5/weather?q={cidade.Nome}&appid={keyAPI}&units=metric&lang=pt_br";
+
+			try
+			{
+				var resposta = await client.GetFromJsonAsync<WeatherResponse>(url);
+
+				if(resposta != null)
+				{
+					Console.WriteLine($" Temperatura: {resposta.Main.Temp} Humidade: {resposta.Main.Humidity}");
+				}
+			}catch (Exception ex)
+			{
+				Console.WriteLine(ex.Message);
+			}
+
+
+	    }
+    }
 }
